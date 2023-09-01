@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Set Interval</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          padding: 10px;
+          width: 200px;
+      }
+      label, button, p {
+          display: block;
+          margin-bottom: 10px;
+      }
+      button {
+          width: 100%;
+          padding: 8px;
+          background-color: #007BFF;
+          color: #FFFFFF;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+      }
+      button:hover {
+          background-color: #0056b3;
+      }
+      #timerIndicator {
+          color: green;
+      }
+      #countdown {
+          font-weight: bold;
+      }
+      #setInterval {
+        margin-left: 20px;
+      }
+      .inpt-conatiner {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+        align-items: baseline;
+        text-align: center;
+      }
+  </style>
+</head>
+  <body>
+    <label for="interval">Reload every:</label>
+    <div class="inpt-conatiner">
+      <input type="number" id="interval" min="1" value="5" style="width: 50px; padding: 5px; margin-bottom: 10px;"> 
+      <span>seconds</span>
+      <button id="setInterval">Start</button>
+    </div>
+    <p id="timerIndicator" style="display: none;">Timer is running</p>
+    <p id="countdown" style="display: none;">Next reload in: <span id="timeRemaining">--</span> seconds</p>
+    <button id="stopTimer" style="display: none;">Stop Timer</button>
+    <script src="popup.js" defer></script>
+  </body>
+</html>
