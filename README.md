@@ -16,7 +16,7 @@ A simple Google Chrome extension that allows users to automatically reload a tab
 
 ### From Chrome Web Store:
 
-1. Visit the [Chrome Web Store listing for this extension](https://chrome.google.com/webstore/detail/auto-tab-reload/).
+1. Visit the [Chrome Web Store listing for this extension](https://chrome.google.com/webstore/detail/auto-tab-reload/pbnpjeodgcnlcclbnbpmlabogfnepdam).
 2. Click on `Add to Chrome`.
 3. Confirm the installation when prompted.
 
