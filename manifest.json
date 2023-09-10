@@ -3,7 +3,7 @@
   "name": "Auto Tab Reload",
   "version": "1.0",
   "description": "Automatically reloads the active tab every set amount of time.",
-  "permissions": ["tabs", "alarms"],
+  "permissions": ["alarms"],
   "background": {
     "service_worker": "background.js"
   },
