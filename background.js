@@ -14,7 +14,11 @@ function startCountdown() {
           clearInterval(countdownInterval);
       }
       // Send updated timeRemaining to the popup, if it's open
-      chrome.runtime.sendMessage({ action: "updateCountdown", timeRemaining: timeRemaining });
+      try {
+        chrome.runtime.sendMessage({ action: "updateCountdown", timeRemaining: timeRemaining });
+      } catch (error) {
+        console.log("Popup is not open");
+      }
   }, 1000);
 }
 
